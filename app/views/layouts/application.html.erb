@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TestsTest</title>
+    <title><%= (yield(:title) + ' - ' unless yield(:title).blank?).to_s + "RoR base title" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
